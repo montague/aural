@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'aural'
+
+if ARGV.empty?
+  puts "you need to enter a full youtube url (including the 'http://' part) in quotes."
+  puts "for example: http://www.youtube.com/watch?v=oHg5SJYRHA0"
+else
+  Aural::Grabber.grab ARGV.shift
+end
