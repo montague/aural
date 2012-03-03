@@ -54,6 +54,7 @@ module Aural
         end
       end
 
+      # debug function
       def announce(s)
         puts "*"*100
         puts s
